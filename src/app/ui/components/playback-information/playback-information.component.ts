@@ -80,6 +80,9 @@ export class PlaybackInformationComponent implements OnInit, OnDestroy {
     @Input()
     public forceWhiteText: boolean = false;
 
+    @Input()
+    public artistViewportWidth: number = 0;
+
     public contentAnimation: string = 'down';
 
     public topContentTrack: TrackModel | undefined;

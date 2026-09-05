@@ -3,7 +3,14 @@
         <div class="ml-1" [ngClass]="this.largeFontClasses" [style.font-size.px]="largeFontSize" [style.line-height]="1.5">
             {{ this.topContentTrack?.title }}
         </div>
-        <div class="ml-1" [ngClass]="this.smallFontClasses" [style.font-size.px]="smallFontSize" [style.line-height]="1.5">
+        <div
+            class="ml-1"
+            [ngClass]="this.smallFontClasses"
+            [style.font-size.px]="smallFontSize"
+            [style.line-height]="1.5"
+            [class.lyrics-artist-viewport]="position === 'top'"
+            [style.width]="position === 'top' && artistViewportWidth > 0 ? artistViewportWidth + 'px' : undefined"
+        >
             {{ this.topContentTrack?.artists }}
         </div>
         <div
@@ -36,7 +43,14 @@
         <div class="ml-1" [ngClass]="this.largeFontClasses" [style.font-size.px]="largeFontSize" [style.line-height]="1.5">
             {{ this.bottomContentTrack?.title }}
         </div>
-        <div class="ml-1" [ngClass]="this.smallFontClasses" [style.font-size.px]="smallFontSize" [style.line-height]="1.5">
+        <div
+            class="ml-1"
+            [ngClass]="this.smallFontClasses"
+            [style.font-size.px]="smallFontSize"
+            [style.line-height]="1.5"
+            [class.lyrics-artist-viewport]="position === 'top'"
+            [style.width]="position === 'top' && artistViewportWidth > 0 ? artistViewportWidth + 'px' : undefined"
+        >
             {{ this.bottomContentTrack?.artists }}
         </div>
         <div
