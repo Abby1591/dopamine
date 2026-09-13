@@ -28,6 +28,7 @@ export class SettingsMock implements SettingsBase {
     public closeToNotificationArea: boolean;
     public downloadArtistInformationFromLastFm: boolean;
     public downloadLyricsOnline: boolean;
+    public showWaveProgress: boolean = true;
     public downloadMissingAlbumCovers: boolean;
     public showArtistImages: boolean;
     public showArtistImagesAsBackground: boolean;
@@ -51,6 +52,7 @@ export class SettingsMock implements SettingsBase {
     public genresTabSelectedTrackOrder: string;
     public invertNotificationAreaIconColor: boolean;
     public keepPlaybackControlsVisibleOnNowPlayingPage: boolean;
+    public showStopButton: boolean;
     public language: string;
     public lastFmPassword: string;
     public lastFmSessionKey: string;
